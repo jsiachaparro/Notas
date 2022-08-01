@@ -1,10 +1,13 @@
 Introducción a Git
 
-A partir de que empece a retomar la programacion me enfoque en hacerlo de una manera estructurada para saber que estoy haciendo y en un futuro regresar a mis notas y/o codigos que voy realizando en mi camino., simplemente una buena practica. 
+A partir de que empece a retomar la programacion me enfoque en hacerlo de una manera estructurada para saber que estoy haciendo y en un futuro regresar a mis notas y/o codigos que voy realizando en mi camino, simplemente crear el habito de "una buena practica". 
 Recuerdo que solia comentar linea por linea porque eran programas sencillos los que realizaba en mis dias de universitario y no le daba demasiada importancia porque solo eran programas que hacia una vez y nunca mas las volvia a retomar. 
-Pero ahora que he empezado a hacer codigos mas extensos hago correcciones y sin importar donde se ubique el error, hago la modificacion del  codigo y por lo tanto, dejaba mi comentario en el codigo  que modificaba al momento, lo llegaba a ser un poco confuso y complicado de leer, o tambien se me olivada que comentar esos cambios, me olvidaba de los errores que cometia y como los corregi; es por eso que opte por aprender a usar Git, para llevar un control y sobre todo crear un habito sano al trabajar con codigo.
-Antes de usar Git hay que instalarlo, ya despues de haber realizado esa tarea ejecutaremos nustra terminal Bash. Hay que tener en cuenta que no es lo mismo instalarlo en windows que en linux, pero en la marcha he preferido usarlo en ambos.
-Al usar linux como buena practica es hacer un update y un upgrade de manera manual usando $sudo apt-get update y despues $sudo apt-get upgrade
+Pero ahora que he empezado a hacer codigos mas extensos hago correcciones y sin importar donde se ubique el error, hago la modificacion del  codigo y por lo tanto, dejaba mi comentario en el codigo  que modificaba al momento, llegaba a ser un poco confuso y complicado de leer, o tambien se me olivada que comentar esos cambios, me olvidaba de los errores que cometia y como los corregi; es por eso que opte por aprender a usar Git, para llevar un control y consolidar el habito de la buena practica.
+
+Antes de usar Git, primero hay que instalarlo, ya despues de haber realizado esa tarea ejecutaremos nuestra terminal(Bash). 
+Hay que tener en cuenta que no es lo mismo instalarlo en windows que en linux o mac, pero en la marcha he preferido usarlo en ambos.
+*Al usar linux como buena practica es hacer un update y un upgrade de manera manual usando $sudo apt-get update y despues $sudo apt-get upgrade
+
 Como una buena practica antes que nada debemos de realizar configuraciones basicas para trabajar Git sin contratiempos.
 Sobre todo para indicar y saber que usuario esta realizando los cambios.
 
@@ -27,10 +30,10 @@ Unos comandos basicos para empezar a realizar nuestro primer repositorio con Git
 Primero hay que saber donde trabajaremos para eso esta el comando:
 
 $pwd      Donde nos mostrara donde en que carpeta estamos trabajando nuestro repositorio 
-            Por ejemplo a mi me arroja el siguiente resultado:
+            Por ejemplo en mi PC me arroja el siguiente resultado:
            " /c/Users/label/Documents/0_Platzi/Git "
 
-Hay que saber como dirigirnos a la carpeta donde estamos trabajando, por lo regular se recomienda trabajar en la raiz para que no sea tanto enrollo, pero yo tabajo desde mi carpeta de documentos para practicar esta comando.
+Hay que saber como dirigirnos a la carpeta donde estamos trabajando, por lo regular se recomienda trabajar en la raiz para que no sea tanto enrollo, pero yo tabajo desde mi carpeta de documentos para practicar este comando.
 
 $cd                     Si introducimos tal cual esta comando nos envia a la raiz
 $cd carpeta/            Este comando nos llevara a la carpeta que queramos acceder, es mas si sabemos la direccion completa de la carpeta podemos acceder sin necesidad de introducir dos veces el comando
@@ -48,7 +51,7 @@ $ls -l  muestra los archivos visibles con sus detalles
 $ls -a  muestra los archivos listados 
 
 Despues de practicar con todos estos comandos veremos que nuestra consola contiene una gran cantidad de comandos, podemos darle una limpieza con:
-$clear o bien "Ctrl + L", asi o mas sencillo. 
+$clear o bien "Ctrl + L", ¿asi o mas sencillo?. 
 
 Ahora hagamos algo mas interesante, creemos una carpeta desde Git
 $mkdir nombreDeCarpeta 
