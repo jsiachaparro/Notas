@@ -1,0 +1,16 @@
+Es es un texto sencillo donde haremos cambios sencillos
+Esta es la version 5, quitamos lineas. 
+Y que sea la ultima.
+
+Viajemos en el tiempo $git reset (Id commit) --hard
+Al menos dejor fuera todos los commits que habamios hecho antes de aplicar este comando. 
+Lo logramos
+
+Pare regresar a la version anterior de manera rapida aplicamos el comando:
+$git reset (Id commit) --hard   //mucho cuidado ya borra todos los commits hasta la version que invocamos. 
+
+
+Otra manera de regresar a una version anterios es necesario conocer el ID del commit para acceder a el
+$git checkout (version que queremos) archivo.txt 
+
+Esta cambio lo vamos a visaulizar pero esta en el limbo que tecnicamente se llama Staging

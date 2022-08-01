@@ -1,0 +1,113 @@
+Introducción a Git
+
+A partir de que empezara a retomar la programacion, yo recuerdo que solia comentar linea por linea porque eran programas sencillos los que realizaba. Pero ahora que realizo programas un poco mas extensos hago correcciones y sin importar donde se ubique el error hacia la modificacion del  codigo, por lo tanto, dejaba mi comentario en el codigo lo llegaba a ser un poco confuso y complicado de leer, o tambien se me olivada que comentar esos cambios, me olvidaba de los errores que cometia y como los corregi; es por eso que opte por aprender a usar Git, para llevar un control y sobre todo crear un habito sano al trabajar con codigo.
+Antes de usar Git hay que instalarlo, ya despues de haber realizado esa tarea ejecutaremos nustra terminal Bash. Hay que tener en cuenta que no es lo mismo instalarlo en windows que en linux, pero en la marcha he preferido usarlo en ambos.
+Al usar linux como buena practica es hacer un update y un upgrade de manera manual usando $sudo apt-get update y despues $sudo apt-get upgrade
+Como una buena practica antes que nada debemos de realizar configuraciones basicas para trabajar Git sin contratiempos.
+Sobre todo para indicar y saber que usuario esta realizando los cambios.
+
+Antes de acceder nuestros datos de usuario conozcamos un poco de lo que hacen nuestros comandos. 
+$git config      Este comando que nos mostrara todas las opciones de configuración que podemos utilizar en Git
+
+Dentro del comando "$git config" tenemos las siguientes funciones como son:
+$git config --list                  Muestra las configuraciones por defecto de Git
+$git config --list --show --origin  Muestra donde estan las configuraciones guardadas de Git 
+
+Ahora introduciremos nuestros datos de usuario de la manera mas sencilla donde cambiaremos los usuarios globales del usuario en la terminal Bash.
+$git config --global user.name "JsiaChaparro"             
+$git config --global user.email "jsiachaparro@gmail.com"
+
+Hay que ver que ahora y mas adelante se usa "-" y "--".
+Para "-" usamos comandos que van con solo letras.
+Para "--" usamos comandos que van con palabras.
+
+Unos comandos basicos para empezar a realizar nuestro primer repositorio con Git son los siguientes
+Primero hay que saber donde trabajaremos para eso esta el comando:
+
+$pwd      Donde nos mostrara donde en que carpeta estamos trabajando nuestro repositorio 
+            Por ejemplo a mi me arroja el siguiente resultado:
+           " /c/Users/label/Documents/0_Platzi/Git "
+
+Hay que saber como dirigirnos a la carpeta donde estamos trabajando, por lo regular se recomienda trabajar en la raiz para que no sea tanto enrollo, pero yo tabajo desde mi carpeta de documentos para practicar esta comando.
+
+$cd                     Si introducimos tal cual esta comando nos envia a la raiz
+$cd carpeta/            Este comando nos llevara a la carpeta que queramos acceder, es mas si sabemos la direccion completa de la carpeta podemos acceder sin necesidad de introducir dos veces el comando
+$cd carpeta/subcarpeta/.../subcarpeta  
+$cd ..                  Nos dirige a la carpeta anterior. 
+
+Observacion: Cuando el nombre de nuestra carpeta es solo una cadena de caracteres se introcuce directamente cuando son dos o mas ha que ponerlas entre comillas por ejemplo: cd.. 'la carpeta'/     cd .. carpeta/ 
+Consejo: aprende a usar la tecla TAB con el simple echo de poner la primera letra TAB ayudara  a autorrellenar el campo de captura.
+
+Ahora que ya sabemos como pasar de carpeta en carpeta necesitamos saber que es lo que hay dentro de cada una, para eso tenemos el comando "$ls" veamos que hace.
+
+$ls     lista los archivos dentro de la carpeta actual
+$ls -al muestra todos los archivos dentro de la carpeta, !todo es todo¡ incluso los archivos ocultos.
+$ls -l  muestra los archivos visibles con sus detalles 
+$ls -a  muestra los archivos listados 
+
+Despues de practicar con todos estos comandos veremos que nuestra consola contiene una gran cantidad de comandos, podemos darle una limpieza con:
+$clear o bien "Ctrl + L", asi o mas sencillo. 
+
+Ahora hagamos algo mas interesante, creemos una carpeta desde Git
+$mkdir nombreDeCarpeta 
+
+Despues crearemos un archivo 
+$touch archivo.txt  puede ser cualquier extension en especial de texto plano para su edicion y manejo en repositorios
+
+Despues pongamos contenido a nuestro archivo, este codigo tiene el poder de abrir nuestro editor de texto predeterminado, guardamos.
+$code archivo.txt
+
+Una vez que ya tiene texto nuestro documento podemos visualizar desde la consola con:
+$cat archivo.txt
+
+Hasta este punto que hemos practicado ¿cuanto codigos no habremos ya ejecutado?, para saber eso simplemente hay que usar:
+$history        el cual nos arrojara un listado enumerado de todo lo que hemos hecho
+¿podemos ejecutar un comando ya usado anteriormente que este en el listado? claro que si, sabiendo su numero aplicamos:
+$!n donde n es su lugar en la numeracion por ejemplo quiero ejecutar el cuarto comando que use "$!4" 
+
+Observacion: Hasta el momento ya has de haber notado que hay unos comando que empiezan con el prefijo $git, justo esos comandos son funciones de Git mientras las otras son funciones de Linux, así que si no sabes nada de linux, ¡alegrate!, que aqui iras aprendiendo el uso de este SO de manera implicita.
+
+Ahora que ya tenemos nuestro archivo y nuestra carpeta. 
+¿que sigue? 
+R = iniciar Git
+primero iniciemos la cartpeta a la cual se le asignara un fichero oculto el cual podemos consultar con $ls -al, rn el listado lo observaremos como ".git".
+$git init   iniciamos la carpeta
+
+Despues agregamos el archivo que vamos a trabajar
+$git add archivo.txt
+
+Si estamos manejando varios archivos usemos el comando:
+$git add . Justo el punto indica que agregue al archivero todos los archivos de la carpeta.
+
+Una vez que agregamos nuestro archivo al repositorio no esta demas echarle un vistazo a su status donde podemos saber si ya esta actualizado a nuestra ultima version de este.
+$git status Aqui observaremos si nuestro archivo ya esta en los repositorios o no, o si tiene alguna tarea pendinte para ser guardada
+
+Despues debemos de aclarar o detallar a que se debe nustra actualizacion dejando una nota de la version usando el comando "$git commit"
+$git commit -m "nota de la version"
+
+Tambien se puede poner el comando sin la nota de la version pero es una mala practica, tambien si escribes "Git commit" nos arrojara a un editor para poner nuestra nota de version en el editor de lineas "bash" una vez que pusimos nuestro comentario salimos con EXC + Shift + Z + Z
+
+Es muy importante que cuando modifiquemos nuesto archivo hagamos lo siguente:
+        1 .- Guardar el archivo
+        2 .- Agregarlo al repositorio $git add
+        3 .- Agregar notas de actualizacion $git commit -m "mensaje"
+
+Podemos sacar el archivo del repositorio usando 
+$git rm el cual lo sacara del archivero pero aun seguira en el cache de Git por si no estas seguro de sacarlo dejandolo en una especie de papeleria de reciclaje
+$git rm --chached elimina el documento del staging.
+Solo el archivo queda fuera del repositorio pero sigue en la carpeta con la ultima modificacion que se le hizo y se puede volver a agregar sin problema con $git add.
+
+Ahora observemos el historial de cambios con ayuda de:
+
+$git log el cual nos mostrara los cambios realizados en la carpeta arrojara informacion parecida a la siguente
+
+commit af334d24b4de13161491ee24bb78b2023133f7a9 (HEAD -> master)
+        es el id de nuestra actualizacion       HEAD nos indica que es la version mas reciente y master que estamos en la rama master
+Author: JsiaChaparro <jsiachaparro@gmail.com>
+Date:   Thu Jul 14 20:37:56 2022 -0500
+        estos son datos de quien y cuando se modifico
+
+Cuando tenemos varios cambios que no caben en la pantalla simplemente usa la flecha hacia abajo para ir viendo las hisotiras mas antigua, una vez llegamos a la primera historia salimos con la tecla q.
+
+Se pueden comparar las versiones con el codigo $git diff, aunque para este texto es un poco complejo observar las comparacions por las grandes cantidades de texto, el formato de texto que es y sobre todo la cantidad de cambios que he reaizado, asi que lo dejaremos para otra practica. 
+
