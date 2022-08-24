@@ -18,7 +18,7 @@
 * 9 Analizar cambiis en los archivos de tu proycto con Git
 * 10 ¿que es el staging?
 * 11 ¿que es branch(rama) y como funciona el Merge en Git?
-* 12 Git reset vs. Git rm
+* 12 Git reset vs. Git -rm
 
 ## **Flujo de trabajo básico en Git**
 
@@ -39,27 +39,27 @@
 * 24 Configurar múltiples colaboradore en un repositorio de GitHub
 
 ## **Fluujos de trabajo profesionales**
-*25 Flujo de trabajo profesional: Haciendo merge de ramas de desarrollo a master
-*26 Flujo d trabajo profesional con Pull request
-*27 Utilizando Pull request en GitHub
-*28 Creando un Fork, contribuyendo a un repositorio
-*29 Haciendo deployment a un servidor
-*30 Hazme pull request
-*31 Ignorar archivos en el repositorio con .gitignore
-*32 Readme.md es una excelent práctica
-*33 Tu sitio w publico con GitHub Pages
+* 25 Flujo de trabajo profesional: Haciendo merge de ramas de desarrollo a master
+* 26 Flujo d trabajo profesional con Pull request
+* 27 Utilizando Pull request en GitHub
+* 28 Creando un Fork, contribuyendo a un repositorio
+* 29 Haciendo deployment a un servidor
+* 30 Hazme pull request
+* 31 Ignorar archivos en el repositorio con .gitignore
+* 32 Readme.md es una excelent práctica
+* 33 Tu sitio w publico con GitHub Pages
 
 ## **Multiples entornos de trabajo en GitHub**
-*34 Git Rebase: reorganizando el trabajo realizado
-*35 Git Stash: Guardar cambios en mmoria y recuperarlos despúes
-*36 Git Clean: Limpiar tu proycto de archivos no deseados
-*37 Git cherry-pick: traer commits viejos al head de un branch
+* 34 Git Rebase: reorganizando el trabajo realizado
+* 35 Git Stash: Guardar cambios en mmoria y recuperarlos despúes
+* 36 Git Clean: Limpiar tu proycto de archivos no deseados
+* 37 Git cherry-pick: traer commits viejos al head de un branch
 
 ## **Comandos de Git para casos de emergencia**
-*38 Git Reset y Reflog: úsase en caso de emergencia
-*39 Reconstruir commints en Git amend
-*40 Buscar en archivos y commits de Git con Grep y log
+* 38 Git Reset y Reflog: úsase en caso de emergencia
+* 39 Reconstruir commints en Git amend
+* 40 Buscar en archivos y commits de Git con Grep y log
 
 ## Bonus sobr Git y GitHub
-*41 Comandos y recursos colaborativos en Git y GitHub
-*Tu Futuro con Git y GihHub
+* 41 Comandos y recursos colaborativos en Git y GitHub
+* Tu Futuro con Git y GihHub
