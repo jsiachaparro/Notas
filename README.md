@@ -1,13 +1,13 @@
 # Temario
 
-Este es el contenido estructurado del curso de Git y GitHub que estare desarrollando en esta carpeta.  Por el momento todo el contenido lo tengo condesado en un solo documento, pero ire realizando apuntes en texto plano de clase por clase.
+Este es el contenido estructurado del curso de Git y GitHub que estare desarrollando en esta carpeta.  Por el momento todo el contenido lo tengo condesado en un solo documento, pero ire realizando apuntes en texto plano de clase por clase.`<br/>`
 
-**Introducción a Git**
-    1 ¿por que usar un sistema de contro de versiones como Git?
-    2 ¿que es git?
-    3/4/5 Instalando Git y GitBash
-    6 Editores de código, archivos binarios y de texto plano
-    7 Introducción a la terminal y línea de comandos
+**Introducción a Git `<br/>`**
+    1 ¿por que usar un sistema de contro de versiones como Git?`<br/>`
+    2 ¿que es git?`<br/>`
+    3/4/5 Instalando Git y GitBash `<br/>`
+    6 Editores de código, archivos binarios y de texto plano `<br/>`
+    7 Introducción a la terminal y línea de comandos `<br/><br/>`
 
 
 **Comandos básicos en Git**
